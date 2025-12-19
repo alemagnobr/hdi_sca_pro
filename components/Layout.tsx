@@ -98,7 +98,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
                   isActive ? 'text-primary-600' : 'text-gray-400'
                 }`}
               >
-                {React.cloneElement(item.icon as React.ReactElement, { size: 22 })}
+                {React.cloneElement(item.icon as React.ReactElement<any>, { size: 22 })}
                 <span className="text-[10px] font-medium">{item.label}</span>
               </button>
             );
